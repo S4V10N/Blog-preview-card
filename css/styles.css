@@ -14,13 +14,19 @@
     --LIGHTERGRAY: hsla(0, 0%, 42%, 0.568);
     --DARKGRAY:  hsl(0, 0%, 7%);
 }
-body{
+body, html{
+    height: 100%;
     font-family: "Figtree", sans-serif;
     padding: 1.4rem 1rem 0rem 1rem;
     background-color: var(--YELLOW);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
 .box{
-    height: 35rem;
+    min-height: 35rem;
     background-color: var(--WHITE);
     border-radius: 1rem;
     border: 1px solid black;
@@ -79,6 +85,7 @@ body{
     align-items: center;
     font-weight: bold;
     gap: 1rem;
+    padding-bottom: 2rem;
 }
 @media (min-width: 600px) {
     .box{
