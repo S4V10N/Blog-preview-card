@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+*{
+    margin: 0rem;
+    padding: 0rem;
+    box-sizing: border-box;
+}
+
+:root{
+    --YELLOW: hsl(47, 88%, 63%);
+    --WHITE: hsl(0, 0%, 100%);
+
+    --LIGHTGRAY: hsl(0, 0%, 42%);
+    --LIGHTERGRAY: hsla(0, 0%, 42%, 0.568);
+    --DARKGRAY:  hsl(0, 0%, 7%);
+}
+body{
+    font-family: "Figtree", sans-serif;
+    padding: 1.4rem 1rem 0rem 1rem;
+    background-color: var(--YELLOW);
+}
+.box{
+    height: 35rem;
+    background-color: var(--WHITE);
+    border-radius: 1rem;
+    border: 1px solid black;
+    box-shadow: 0.4rem 0.4rem var(--DARKGRAY);
+}
+.box2 img{
+    width: 100%;
+    border-radius: 2rem;
+    padding: 1rem;
+}
+.border{
+    background-color: var(--YELLOW);
+    height: 2.5rem;
+    font-size: 1.2rem;
+    display: grid;
+    place-content: center;
+    width: 7.4rem;
+    margin-left: 1rem;
+    font-weight: bold;
+    border-radius: 0.4rem;
+    margin-bottom: 0.8rem;
+    color: var(--DARKGRAY);
+}
+.text{
+    margin-left: 1rem;
+    font-weight: 600;
+    margin-bottom: 1.4rem;
+    color: var(--LIGHTGRAY);
+}
+.yellow{
+    font-weight: bold;
+    font-size: 1.4rem;
+    margin-left: 1rem;
+    margin-bottom: 1.4rem;
+}
+.textbox{
+    color: var(--LIGHTERGRAY);
+    font-weight: 600;
+    margin-left: 1rem;
+}
+.profile{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.profile img{
+    margin: 2rem 0rem 2rem 1rem;
+}
+.profile p{
+    font-weight: bold;
+}
+
+.footer{
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    gap: 1rem;
+}
+@media (min-width: 600px) {
+    .box{
+        width: 70%;
+        height: 42rem;
+    }
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 100vh;
+    }
+    main{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media (min-width: 1024px) {
+    .box{
+        width: 90%;
+        height: 46rem;
+    }
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 100vh;
+    }
+    main{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 70%;
+        margin-bottom: 3rem;
+    }
+}
